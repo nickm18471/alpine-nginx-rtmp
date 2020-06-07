@@ -16,6 +16,10 @@ RUN apk --no-cache upgrade \
 
 COPY /etc/nginx/nginx.conf /etc/nginx/nginx.conf
 
+# Forward logs to Docker
+RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
+    ln -sf /dev/stderr /var/log/nginx/error.log
+
 EXPOSE 1935
 
-#CMD ["nginx", "-g", "daemon off;"]
+CMD ["/usr/sbin/nginx"]
