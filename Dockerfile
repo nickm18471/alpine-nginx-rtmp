@@ -1,8 +1,8 @@
 ###############################################################################
-# Alpine Linux Nginx RTMP Docker Container / uknickm/alpine-nginx-rtmp
+# Alpine Linux Nginx RTMP Docker Container 
 #
-# Inspired by tiangolo/nginx-rtmp-docker licesnsed under MIT.
-# 
+# nickmilleruk/alpine-nginx-rtmp
+#
 # @copyright Copyright (c) 2020 Nicholas Miller.
 # @license Please see 
 # @version 1.0.0
